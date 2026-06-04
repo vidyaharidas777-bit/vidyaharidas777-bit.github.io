@@ -10,71 +10,76 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:'Segoe UI',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#050816,#0f172a);
+background:linear-gradient(135deg,#0B1220,#111827);
 color:white;
+line-height:1.6;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-padding:20px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
+header{
+padding:20px 8%;
+background:#0F172A;
+text-align:center;
 }
 
 .logo{
-font-size:28px;
+font-size:32px;
 font-weight:bold;
-color:#6ea8ff;
+color:#14B8A6;
 }
 
 .hero{
+padding:100px 20px;
 text-align:center;
-padding:80px 20px;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:15px;
+font-size:55px;
+margin-bottom:10px;
 }
 
 .hero h2{
-color:#b26bff;
+color:#FB7185;
 margin-bottom:20px;
 }
 
 .hero p{
-max-width:700px;
+max-width:800px;
 margin:auto;
-line-height:1.8;
 font-size:18px;
 color:#d1d5db;
 }
 
 .btn{
 display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:linear-gradient(90deg,#ff4fd8,#5e9bff);
+margin-top:25px;
+padding:14px 30px;
+background:linear-gradient(90deg,#14B8A6,#FB7185);
 border-radius:30px;
-color:white;
 text-decoration:none;
+color:white;
 font-weight:bold;
 }
 
 .section{
-padding:60px 20px;
-text-align:center;
+padding:70px 10%;
 }
 
 .section h2{
-font-size:35px;
+text-align:center;
 margin-bottom:30px;
-color:#6ea8ff;
+font-size:36px;
+color:#14B8A6;
+}
+
+.card{
+background:#1E293B;
+padding:25px;
+border-radius:20px;
+margin-bottom:20px;
 }
 
 .skills{
@@ -85,70 +90,77 @@ gap:15px;
 }
 
 .skill{
-background:#111827;
-padding:15px 25px;
+background:#1E293B;
+padding:12px 20px;
 border-radius:15px;
-border:1px solid #374151;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-max-width:800px;
-margin:auto;
-}
-
-.card{
-background:#111827;
-padding:30px;
-border-radius:20px;
-}
-
-.card h3{
-font-size:30px;
-color:#6ea8ff;
 }
 
 .contact{
-line-height:2;
+text-align:center;
 font-size:18px;
+line-height:2;
 }
 
 footer{
+background:#0F172A;
 text-align:center;
 padding:20px;
-background:#020617;
-margin-top:40px;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-<div class="logo">Sreevidya</div>
-</nav>
+<header>
+<div class="logo">Sreevidya Haridas</div>
+</header>
 
 <section class="hero">
-<h1>Hello, I'm Sreevidya Haridas</h1>
+<h1>Hello, I'm Sreevidya</h1>
 <h2>BCA Student | IIT Intern</h2>
 
 <p>
-I am a passionate BCA student with a strong interest in technology,
-data analytics, and problem-solving. I enjoy learning new skills,
-working in teams, and building creative solutions. My internship
-experience at IIT has helped me develop technical knowledge,
-communication abilities, and practical industry exposure. I am
-always eager to explore new opportunities and continuously improve
-my skills.
+I am a Bachelor of Computer Applications student with a strong passion for technology, innovation, and continuous learning. Through my academic journey and internship experience, I have developed technical knowledge, problem-solving abilities, teamwork skills, and effective communication. I enjoy exploring programming, databases, and emerging technologies while continuously improving myself both personally and professionally.
 </p>
 
 <a href="#contact" class="btn">Contact Me</a>
+
 </section>
 
 <section class="section">
-<h2>My Skills</h2>
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am an enthusiastic learner who enjoys turning ideas into practical solutions. My interests include programming, data management, and technology-driven innovation. I believe in lifelong learning, creativity, and collaboration. My goal is to contribute to meaningful projects while expanding my technical and professional skills.
+</p>
+</div>
+
+</section>
+
+<section class="section">
+<h2>Education</h2>
+
+<div class="card">
+<h3>Bachelor of Computer Applications (BCA)</h3>
+<p>Currently pursuing my degree with a focus on programming, databases, and computer applications.</p>
+</div>
+
+</section>
+
+<section class="section">
+<h2>IIT Internship Experience</h2>
+
+<div class="card">
+<p>
+Successfully completed an internship associated with IIT, gaining practical exposure to project-based learning, technical concepts, teamwork, communication, and professional development.
+</p>
+</div>
+
+</section>
+
+<section class="section">
+<h2>Skills</h2>
 
 <div class="skills">
 <div class="skill">Creative Thinking</div>
@@ -159,42 +171,61 @@ my skills.
 <div class="skill">SQL</div>
 <div class="skill">C Programming</div>
 </div>
+
 </section>
 
 <section class="section">
-<h2>Highlights</h2>
-
-<div class="cards">
-<div class="card">
-<h3>BCA</h3>
-<p>Computer Applications Student</p>
-</div>
+<h2>Projects</h2>
 
 <div class="card">
-<h3>IIT</h3>
-<p>Internship Experience</p>
+<h3>Portfolio Website</h3>
+<p>Designed and developed a personal portfolio website using HTML and CSS.</p>
 </div>
 
 <div class="card">
-<h3>7+</h3>
-<p>Technical Skills</p>
+<h3>Student Database Project</h3>
+<p>Created a database system for managing and storing student information.</p>
 </div>
 
 <div class="card">
-<h3>∞</h3>
-<p>Learning Mindset</p>
+<h3>Python Mini Projects</h3>
+<p>Developed beginner-friendly applications and programs using Python.</p>
 </div>
+
+</section>
+
+<section class="section">
+<h2>Achievements</h2>
+
+<div class="card">
+<p>✓ IIT Internship Experience</p>
+<p>✓ Portfolio Website Development</p>
+<p>✓ Technical Skill Development</p>
+<p>✓ Continuous Learning Mindset</p>
 </div>
+
+</section>
+
+<section class="section">
+<h2>Interests</h2>
+
+<div class="card">
+<p>
+Technology • Artificial Intelligence • Data Analytics • Reading • Creative Design • Music
+</p>
+</div>
+
 </section>
 
 <section class="section" id="contact">
-<h2>Contact Details</h2>
+<h2>Contact Me</h2>
 
 <div class="contact">
-<p>📧 Email: vidyaharidas777@gmail..com</p>
-<p>📱 Phone: +91 8075020173</p>
-<p>📍 Kerala, India</p>
+📧 Email: vidyaharidas777@gmail.com<br>
+📱 Phone: +91 8075020173<br>
+📍 Kerala, India
 </div>
+
 </section>
 
 <footer>
